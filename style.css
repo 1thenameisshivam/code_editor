@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@200;300;400;500;600;800&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Poppins",sans-serif;
+  color: white;
+  background-color: rgb(28, 27, 53);
+}
+.main{
+    width: 100%;
+    height:150vh;
+    position: relative;
+}
+nav{ 
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background-color: rgb(76, 235, 131);
+    color: white;
+    padding: 5px;
+}
+.hero_sec{
+    width: 100%;
+    height:calc(100vh - 45px);
+    display: flex;
+}
+.lside{
+    width: 50%;
+    padding: 10px;
+}
+.rside{
+    width: 50%;
+    padding: 10px;
+}
+.output{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 988px;
+    
+}
+iframe{
+    background-color: white;
+    border: none;
+    height: 100%;
+    color: black;
+}
+.html_code{
+    display: flex;
+    flex-direction: column;
+}
+.css_code{
+    display: flex;
+    flex-direction: column;
+}
+.js_code{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    background-color: black;
+    border: none;
+    height: 300px;
+    color: white;
+}
+label{
+    padding: 5px 10px 0px 10px;
+}
+i{
+    padding:5px;
+}
+
+.pramotion a{
+    text-decoration: none;
+    color: rgb(68, 229, 151);
+    font-size: 30px;
+    transition: 0.5s;
+ 
+}
+.pramotion{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+}
+.pramotion a:hover{
+    color: royalblue;
+}
+
+@media (max-width:586px) {
+     .hero_sec{
+        display: flex;
+        flex-direction: column;
+     }
+     .lside{
+        width: 100%;
+        padding: 10px;
+    }
+    .rside{
+        width: 100%;
+    }
+    .pramotion{
+        position: absolute;
+        display: none;
+    }
+    .pramotion a:hover{
+        color: royalblue;
+    }
+}
